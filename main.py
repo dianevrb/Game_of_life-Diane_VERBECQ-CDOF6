@@ -4,17 +4,16 @@ import numpy as np
 
 def print_grid(grid):
     """
-    Affiche la grille dans le terminal.
+    Displays the grid in the terminal.
     """
     os.system('cls' if os.name == 'nt' else 'clear')
     for row in grid:
         print(' '.join(['#' if cell else '.' for cell in row]))
     print()
 
-
 def update_grid(grid):
     """
-    Met à jour la grille selon les règles du Game of Life.
+    Updates the grid based on the rules of the Game of Life.
     """
     rows, cols = len(grid), len(grid[0])
     new_grid = [[0 for _ in range(cols)] for _ in range(rows)]
@@ -22,17 +21,16 @@ def update_grid(grid):
         for c in range(cols):
             live_neighbors = count_live_neighbors(grid, r, c)
             if grid[r][c] == 1:
-                # Une cellule vivante survit avec 2 ou 3 voisins vivants
+                # A live cell survives with 2 or 3 live neighbors
                 new_grid[r][c] = 1 if live_neighbors in (2, 3) else 0
             else:
-                # Une cellule morte devient vivante avec exactement 3 voisins vivants
+                # A dead cell becomes alive with exactly 3 live neighbors
                 new_grid[r][c] = 1 if live_neighbors == 3 else 0
     return new_grid
 
-
 def count_live_neighbors(grid, row, col):
     """
-    Compte le nombre de voisins vivants autour d'une cellule.
+    Counts the number of live neighbors around a cell.
     """
     rows, cols = len(grid), len(grid[0])
     live_neighbors = 0
@@ -45,17 +43,16 @@ def count_live_neighbors(grid, row, col):
                 live_neighbors += grid[nr][nc]
     return live_neighbors
 
-
 def main():
-    # Dimensions de la grille
+    # Grid dimensions
     rows, cols = 20, 20
 
-    # Initialisation aléatoire de la grille
+    # Random initialization of the grid
     grid = np.random.choice([0, 1], size=(rows, cols), p=[0.8, 0.2])
 
-    print("Bienvenue dans le Game of Life!")
-    print("Simulation avec une grille de 20x20 et une initialisation aléatoire.")
-    print("Appuyez sur Ctrl+C pour quitter.\n")
+    print("Welcome to the Game of Life!")
+    print("Simulation with a 20x20 grid and random initialization.")
+    print("Press Ctrl+C to exit.\n")
 
     try:
         while True:
@@ -63,8 +60,7 @@ def main():
             grid = update_grid(grid)
             time.sleep(0.3)
     except KeyboardInterrupt:
-        print("\nSimulation arrêtée par l'utilisateur. Merci d'avoir joué!")
-
+        print("\nSimulation stopped by the user. Thanks for playing!")
 
 if __name__ == "__main__":
     main()
