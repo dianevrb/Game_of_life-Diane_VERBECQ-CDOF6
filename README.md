@@ -60,7 +60,7 @@ If you encounter bugs or have suggestions for new features, please open an issue
 
 2. Clone your forked repository:
    ```bash
-   git clone https://github.com/dianevrb/Game_of_life-Diane_VERBECQ-CDOF6.git
+   git clone ...
    ```
 
 3. Create a new branch for your feature or bug fix:
