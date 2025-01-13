@@ -1,4 +1,5 @@
 # Game_of_life-Diane_VERBECQ-CDOF6
+
 Game of life implementation with python in the context of the Decentralization Technologies course. It's a really interesting course to learn about blockchain and other decentralized technologies.
 
 ## Description
