@@ -29,7 +29,7 @@ This project is a fun way to explore emergent patterns and chaos in a minimalist
 1. Clone or download the repository:
    ```bash
    git clone https://github.com/dianevrb/Game_of_life-Diane_VERBECQ-DIA6.git
-   cd Game_of_Life
+   cd Game_of_life-Diane_VERBECQ-DIA6
    ```
 
 2. Run the `main` Python script:
@@ -55,7 +55,7 @@ If you encounter bugs or have suggestions for new features, please open an issue
 
 1. Fork the repository to your GitHub account:
    ```bash
-   git fork https://github.com/your_username/Game_of_Life.git
+   git fork https://github.com/dianevrb/Game_of_life-Diane_VERBECQ-DIA6.git
    ```
 
 2. Clone your forked repository:
