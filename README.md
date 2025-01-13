@@ -1,4 +1,4 @@
-# Game_of_life-Diane_VERBECQ-DIA6
+# Game_of_life-Diane_VERBECQ-CDOF6
 Game of life implementation with python in the context of the Decentralization Technologies course
 
 ## Description
@@ -28,8 +28,8 @@ This project is a fun way to explore emergent patterns and chaos in a minimalist
 
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/dianevrb/Game_of_life-Diane_VERBECQ-DIA6.git
-   cd Game_of_life-Diane_VERBECQ-DIA6
+   git clone https://github.com/dianevrb/Game_of_life-Diane_VERBECQ-CDOF6.git
+   cd Game_of_life-Diane_VERBECQ-CDOF6
    ```
 
 2. Run the `main` Python script:
@@ -49,18 +49,18 @@ We welcome contributions to improve this project! Here’s how you can get invol
 
 ### Reporting Issues
 
-If you encounter bugs or have suggestions for new features, please open an issue on the [GitHub Issues page](https://github.com/dianevrb/Game_of_life-Diane_VERBECQ-DIA6/issues).
+If you encounter bugs or have suggestions for new features, please open an issue on the [GitHub Issues page](https://github.com/dianevrb/Game_of_life-Diane_VERBECQ-CDOF6/issues).
 
 ### Making Contributions
 
 1. Fork the repository to your GitHub account:
    ```bash
-   git fork https://github.com/dianevrb/Game_of_life-Diane_VERBECQ-DIA6.git
+   git fork https://github.com/dianevrb/Game_of_life-Diane_VERBECQ-CDOF6.git
    ```
 
 2. Clone your forked repository:
    ```bash
-   git clone https://github.com/dianevrb/Game_of_life-Diane_VERBECQ-DIA6.git
+   git clone https://github.com/dianevrb/Game_of_life-Diane_VERBECQ-CDOF6.git
    ```
 
 3. Create a new branch for your feature or bug fix:
