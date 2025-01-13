@@ -1,18 +1,6 @@
 import os
 import time
-import random
-
-
-def create_random_grid(rows, cols, density=0.2):
-    """
-    Crée une grille avec des cellules vivantes aléatoires.
-    :param rows: Nombre de lignes.
-    :param cols: Nombre de colonnes.
-    :param density: Proportion de cellules vivantes (entre 0 et 1).
-    :return: Grille initiale.
-    """
-    return [[1 if random.random() < density else 0 for _ in range(cols)] for _ in range(rows)]
-
+import numpy as np
 
 def print_grid(grid):
     """
@@ -63,7 +51,7 @@ def main():
     rows, cols = 20, 20
 
     # Initialisation aléatoire de la grille
-    grid = create_random_grid(rows, cols, density=0.3)
+    grid = np.random.choice([0, 1], size=(rows, cols), p=[0.8, 0.2])
 
     print("Bienvenue dans le Game of Life!")
     print("Simulation avec une grille de 20x20 et une initialisation aléatoire.")
